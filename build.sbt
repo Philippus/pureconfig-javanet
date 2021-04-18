@@ -11,7 +11,7 @@ scalaVersion := crossScalaVersions.value.last
 scalacOptions += "-deprecation"
 
 libraryDependencies ++= Seq(
-  "com.github.pureconfig" %% "pureconfig" % "0.14.1" % Provided,
+  "com.github.pureconfig" %% "pureconfig" % "0.15.0" % Provided,
   "commons-validator" % "commons-validator" % "1.7",
   "org.scalameta" %% "munit" % "0.7.23" % Test
 )
