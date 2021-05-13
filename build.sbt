@@ -13,7 +13,7 @@ scalacOptions += "-deprecation"
 libraryDependencies ++= Seq(
   "com.github.pureconfig" %% "pureconfig" % "0.15.0" % Provided,
   "commons-validator" % "commons-validator" % "1.7",
-  "org.scalameta" %% "munit" % "0.7.25" % Test
+  "org.scalameta" %% "munit" % "0.7.26" % Test
 )
 
 testFrameworks += new TestFramework("munit.Framework")
