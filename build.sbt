@@ -11,6 +11,8 @@ ThisBuild / version := "0.0.2-SNAPSHOT"
 ThisBuild / versionScheme := Some("semver-spec")
 ThisBuild / versionPolicyIntention := Compatibility.BinaryCompatible
 
+Compile / packageBin / packageOptions += Package.ManifestAttributes("Automatic-Module-Name" -> "nl.gn0s1s.pureconfig.module.javenet")
+
 scalacOptions += "-deprecation"
 
 libraryDependencies ++= Seq(
