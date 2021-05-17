@@ -4,7 +4,7 @@ startYear := Some(2021)
 homepage := Some(url("https://github.com/philippus/pureconfig-javanet"))
 licenses += ("Mozilla Public License, version 2.0", url("https://www.mozilla.org/MPL/2.0/"))
 
-crossScalaVersions := List("2.13.5")
+crossScalaVersions := List("2.13.6")
 scalaVersion := crossScalaVersions.value.last
 
 ThisBuild / version := "0.0.2-SNAPSHOT"
