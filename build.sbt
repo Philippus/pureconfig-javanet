@@ -4,10 +4,18 @@ startYear := Some(2021)
 homepage := Some(url("https://github.com/philippus/pureconfig-javanet"))
 licenses += ("Mozilla Public License, version 2.0", url("https://www.mozilla.org/MPL/2.0/"))
 
+developers := List(
+  Developer(
+    id = "philippus",
+    name = "Philippus Baalman",
+    email = "",
+    url = url("https://github.com/philippus")
+  )
+)
+
 crossScalaVersions := List("2.13.5")
 scalaVersion := crossScalaVersions.value.last
 
-ThisBuild / version := "0.0.2-SNAPSHOT"
 ThisBuild / versionScheme := Some("semver-spec")
 ThisBuild / versionPolicyIntention := Compatibility.BinaryCompatible
 
@@ -22,16 +30,3 @@ libraryDependencies ++= Seq(
 )
 
 testFrameworks += new TestFramework("munit.Framework")
-
-pomExtra :=
-  <scm>
-    <url>git@github.com:Philippus/pureconfig-javanet.git</url>
-    <connection>scm:git@github.com:Philippus/pureconfig-javanet.git</connection>
-  </scm>
-  <developers>
-    <developer>
-      <id>philippus</id>
-      <name>Philippus Baalman</name>
-      <url>https://github.com/philippus</url>
-    </developer>
-  </developers>
