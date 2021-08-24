@@ -19,7 +19,9 @@ scalaVersion := crossScalaVersions.value.last
 ThisBuild / versionScheme := Some("semver-spec")
 ThisBuild / versionPolicyIntention := Compatibility.BinaryCompatible
 
-Compile / packageBin / packageOptions += Package.ManifestAttributes("Automatic-Module-Name" -> "nl.gn0s1s.pureconfig.module.javanet")
+Compile / packageBin / packageOptions += Package.ManifestAttributes(
+  "Automatic-Module-Name" -> "nl.gn0s1s.pureconfig.module.javanet"
+)
 
 scalacOptions += "-deprecation"
 
