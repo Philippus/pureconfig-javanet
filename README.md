@@ -1,6 +1,6 @@
 # pureconfig-javanet
 
-![build](https://github.com/Philippus/pureconfig-javanet/workflows/build/badge.svg)
+[![build](https://github.com/Philippus/pureconfig-javanet/workflows/build/badge.svg)](https://github.com/Philippus/pureconfig-javanet/actions/workflows/scala.yml?query=workflow%3Abuild+branch%3Amain)
 [![codecov](https://codecov.io/gh/Philippus/pureconfig-javanet/branch/main/graph/badge.svg)](https://codecov.io/gh/Philippus/pureconfig-javanet)
 ![Current Version](https://img.shields.io/badge/version-0.0.1-brightgreen.svg?style=flat "0.0.1")
 [![License](https://img.shields.io/badge/License-MPL%202.0-blue.svg?style=flat "MPL 2.0")](LICENSE)
