@@ -1,6 +1,6 @@
 addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.4.3")
 
-addSbtPlugin("ch.epfl.scala" % "sbt-version-policy" % "2.0.0")
+addSbtPlugin("ch.epfl.scala" % "sbt-version-policy" % "2.0.1")
 
 addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.9.1")
 
