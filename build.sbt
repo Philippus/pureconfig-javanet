@@ -26,7 +26,7 @@ Compile / packageBin / packageOptions += Package.ManifestAttributes(
 scalacOptions += "-deprecation"
 
 libraryDependencies ++= Seq(
-  "com.github.pureconfig" %% "pureconfig" % "0.17.0" % Provided,
+  "com.github.pureconfig" %% "pureconfig" % "0.17.1" % Provided,
   "commons-validator" % "commons-validator" % "1.7",
   "org.scalameta" %% "munit" % "0.7.29" % Test
 )
