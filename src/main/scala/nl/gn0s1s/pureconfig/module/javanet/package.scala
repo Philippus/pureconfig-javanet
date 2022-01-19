@@ -43,7 +43,7 @@ package object javanet {
   }
 
   implicit val inetSocketAddressConfigConvert: ConfigConvert[InetSocketAddress] =
-    ConfigConvert.viaNonEmptyString(s => parseHostAndPort(s), _.toString)
+    ConfigConvert.viaNonEmptyString(s => parseHostAndPort(s), address => s"${address.getHostString}:${address.getPort}")
 
   implicit val inetSocketAddressListConfigConvert: ConfigConvert[Seq[InetSocketAddress]] =
     ConfigConvert.viaNonEmptyString(
@@ -55,6 +55,8 @@ package object javanet {
           case _ =>
             Left(CannotConvert(s, "Seq[InetSocketAddress]", "Cannot parse string into hosts and ports"))
         },
-      _.mkString(",")
+      _.map { address =>
+        s"${address.getHostString}:${address.getPort}"
+      }.mkString(",")
     )
 }
