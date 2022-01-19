@@ -2,7 +2,7 @@
 
 [![build](https://github.com/Philippus/pureconfig-javanet/workflows/build/badge.svg)](https://github.com/Philippus/pureconfig-javanet/actions/workflows/scala.yml?query=workflow%3Abuild+branch%3Amain)
 [![codecov](https://codecov.io/gh/Philippus/pureconfig-javanet/branch/main/graph/badge.svg)](https://codecov.io/gh/Philippus/pureconfig-javanet)
-![Current Version](https://img.shields.io/badge/version-0.0.1-brightgreen.svg?style=flat "0.0.1")
+![Current Version](https://img.shields.io/badge/version-0.0.2-brightgreen.svg?style=flat "0.0.2")
 [![License](https://img.shields.io/badge/License-MPL%202.0-blue.svg?style=flat "MPL 2.0")](LICENSE)
 
 pureconfig-javanet is a [PureConfig](https://pureconfig.github.io/docs/) module that supplies readers and writers that
@@ -24,7 +24,7 @@ _unresolved_, see https://docs.oracle.com/javase/8/docs/api/java/net/InetSocketA
 pureconfig-javanet is published for Scala 2.13. To start using it add the following to your `build.sbt`:
 
 ```
-libraryDependencies += "nl.gn0s1s" %% "pureconfig-javanet" % "0.0.1"
+libraryDependencies += "nl.gn0s1s" %% "pureconfig-javanet" % "0.0.2"
 ```
 
 PureConfig itself also needs to be added as a dependency to your project.
