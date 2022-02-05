@@ -3,7 +3,7 @@
 [![build](https://github.com/Philippus/pureconfig-javanet/workflows/build/badge.svg)](https://github.com/Philippus/pureconfig-javanet/actions/workflows/scala.yml?query=workflow%3Abuild+branch%3Amain)
 [![codecov](https://codecov.io/gh/Philippus/pureconfig-javanet/branch/main/graph/badge.svg)](https://codecov.io/gh/Philippus/pureconfig-javanet)
 ![Current Version](https://img.shields.io/badge/version-0.0.2-brightgreen.svg?style=flat "0.0.2")
-[![License](https://img.shields.io/badge/License-MPL%202.0-blue.svg?style=flat "MPL 2.0")](LICENSE)
+[![license](https://img.shields.io/badge/license-MPL%202.0-blue.svg?style=flat "MPL 2.0")](LICENSE)
 
 pureconfig-javanet is a [PureConfig](https://pureconfig.github.io/docs/) module that supplies readers and writers that
 turn a `host:port` pair into a `InetSocketAddress` and turn a list of `host:port` pairs, separated by a comma, into a
