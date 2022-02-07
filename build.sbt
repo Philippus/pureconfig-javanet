@@ -2,7 +2,7 @@ name := "pureconfig-javanet"
 organization := "nl.gn0s1s"
 startYear := Some(2021)
 homepage := Some(url("https://github.com/philippus/pureconfig-javanet"))
-licenses += ("Mozilla Public License, version 2.0", url("https://www.mozilla.org/MPL/2.0/"))
+licenses += ("MPL-2.0", url("https://www.mozilla.org/MPL/2.0/"))
 
 developers := List(
   Developer(
