@@ -30,5 +30,3 @@ libraryDependencies ++= Seq(
   "commons-validator" % "commons-validator" % "1.7",
   "org.scalameta" %% "munit" % "0.7.29" % Test
 )
-
-testFrameworks += new TestFramework("munit.Framework")
