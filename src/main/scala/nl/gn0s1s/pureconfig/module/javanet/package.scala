@@ -14,9 +14,9 @@ package object javanet {
     lastOccurrenceOfColon match {
       case -1 =>
         Left(CannotConvert(unparsedHostAndPort, "InetSocketAddress", "no port defined"))
-      case 0 =>
+      case 0  =>
         Left(CannotConvert(unparsedHostAndPort, "InetSocketAddress", "no host defined"))
-      case n =>
+      case n  =>
         val host = {
           val candidate = unparsedHostAndPort.take(n).trim
           if (candidate.startsWith("[") && candidate.endsWith("]"))
@@ -52,7 +52,7 @@ package object javanet {
           .partitionMap(parseHostAndPort) match {
           case (errors, ok) if errors.isEmpty =>
             Right(ok.toSeq)
-          case _ =>
+          case _                              =>
             Left(CannotConvert(s, "Seq[InetSocketAddress]", "Cannot parse string into hosts and ports"))
         },
       _.map { address =>
