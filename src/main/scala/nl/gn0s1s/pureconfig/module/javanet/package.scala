@@ -59,4 +59,7 @@ package object javanet {
         s"${address.getHostString}:${address.getPort}"
       }.mkString(",")
     )
+
+  implicit val inetSocketAddressListConfigConvert: ConfigConvert[List[InetSocketAddress]] =
+    inetSocketAddressSeqConfigConvert.xmap(_.toList, _.toList)
 }

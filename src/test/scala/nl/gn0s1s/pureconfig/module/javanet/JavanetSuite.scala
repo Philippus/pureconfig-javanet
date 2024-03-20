@@ -153,6 +153,26 @@ class JavanetSuite extends munit.FunSuite {
     )
   }
 
+  test("can read multiple addresses as a list") {
+    case class Config(hosts: List[InetSocketAddress])
+
+    val conf = parseString("""hosts: "localhost:65535,127.0.0.1:80,localhost:443"""")
+
+    assert(
+      conf
+        .to[Config]
+        .contains(
+          Config(
+            List(
+              InetSocketAddress.createUnresolved("localhost", 65535),
+              InetSocketAddress.createUnresolved("127.0.0.1", 80),
+              InetSocketAddress.createUnresolved("localhost", 443)
+            )
+          )
+        )
+    )
+  }
+
   test("can read a single address as multiple addresses") {
     case class Config(hosts: Seq[InetSocketAddress])
 
@@ -190,6 +210,18 @@ class JavanetSuite extends munit.FunSuite {
 
     assert(
       ConfigReader[Seq[InetSocketAddress]].from(ConfigWriter[Seq[InetSocketAddress]].to(addresses)).contains(addresses)
+    )
+  }
+
+  test("can read back a written List[InetSocketAddress]") {
+    val addresses = List(
+      InetSocketAddress.createUnresolved("localhost", 65535),
+      InetSocketAddress.createUnresolved("127.0.0.1", 80),
+      InetSocketAddress.createUnresolved("localhost", 443)
+    )
+
+    assert(
+      ConfigReader[List[InetSocketAddress]].from(ConfigWriter[List[InetSocketAddress]].to(addresses)).contains(addresses)
     )
   }
 
