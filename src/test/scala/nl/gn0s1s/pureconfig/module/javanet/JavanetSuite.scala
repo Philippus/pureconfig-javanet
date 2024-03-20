@@ -143,7 +143,7 @@ class JavanetSuite extends munit.FunSuite {
         .to[Config]
         .contains(
           Config(
-            List(
+            Seq(
               InetSocketAddress.createUnresolved("localhost", 65535),
               InetSocketAddress.createUnresolved("127.0.0.1", 80),
               InetSocketAddress.createUnresolved("localhost", 443)
@@ -158,7 +158,7 @@ class JavanetSuite extends munit.FunSuite {
 
     val conf = parseString("""hosts: "localhost:65535"""")
 
-    assert(conf.to[Config].contains(Config(List(InetSocketAddress.createUnresolved("localhost", 65535)))))
+    assert(conf.to[Config].contains(Config(Seq(InetSocketAddress.createUnresolved("localhost", 65535)))))
   }
 
   test("is lenient about whitespace") {
@@ -171,7 +171,7 @@ class JavanetSuite extends munit.FunSuite {
         .to[Config]
         .contains(
           Config(
-            List(
+            Seq(
               InetSocketAddress.createUnresolved("localhost", 65535),
               InetSocketAddress.createUnresolved("127.0.0.1", 80),
               InetSocketAddress.createUnresolved("localhost", 443)
