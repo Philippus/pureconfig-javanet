@@ -221,7 +221,9 @@ class JavanetSuite extends munit.FunSuite {
     )
 
     assert(
-      ConfigReader[List[InetSocketAddress]].from(ConfigWriter[List[InetSocketAddress]].to(addresses)).contains(addresses)
+      ConfigReader[List[InetSocketAddress]].from(ConfigWriter[List[InetSocketAddress]].to(addresses)).contains(
+        addresses
+      )
     )
   }
 
