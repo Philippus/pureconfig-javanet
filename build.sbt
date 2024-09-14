@@ -28,5 +28,5 @@ scalacOptions += "-deprecation"
 libraryDependencies ++= Seq(
   "com.github.pureconfig" %% "pureconfig"        % "0.17.7" % Provided,
   "commons-validator"      % "commons-validator" % "1.9.0",
-  "org.scalameta"         %% "munit"             % "1.0.1"  % Test
+  "org.scalameta"         %% "munit"             % "1.0.2"  % Test
 )
