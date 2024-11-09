@@ -4,10 +4,10 @@ import java.net.InetSocketAddress
 
 import com.typesafe.config.ConfigFactory.parseString
 import com.typesafe.config.ConfigOriginFactory
-import pureconfig._
+import pureconfig.*
 import pureconfig.error.{CannotConvert, ConfigReaderFailures, ConvertFailure}
-import pureconfig.generic.auto._
-import pureconfig.syntax._
+import pureconfig.generic.auto.*
+import pureconfig.syntax.*
 
 class JavanetSuite extends munit.FunSuite {
   private val expectedConfigOrigin =
