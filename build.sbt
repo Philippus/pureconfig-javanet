@@ -13,8 +13,8 @@ developers := List(
   )
 )
 
-crossScalaVersions := List("2.13.15")
-scalaVersion       := crossScalaVersions.value.last
+scalaVersion := "2.13.15"
+crossScalaVersions += "3.3.4"
 
 ThisBuild / versionScheme          := Some("semver-spec")
 ThisBuild / versionPolicyIntention := Compatibility.BinaryCompatible
@@ -23,10 +23,28 @@ Compile / packageBin / packageOptions += Package.ManifestAttributes(
   "Automatic-Module-Name" -> "nl.gn0s1s.pureconfig.module.javanet"
 )
 
-scalacOptions += "-deprecation"
+Test / unmanagedSourceDirectories ++= {
+  (Test / unmanagedSourceDirectories).value.map { dir =>
+    CrossVersion.partialVersion(scalaVersion.value) match {
+      case Some((2, 13)) => file(dir.getPath ++ "-2.13")
+      case _             => file(dir.getPath ++ "-3+")
+    }
+  }
+}
+
+scalacOptions ++= (CrossVersion.partialVersion(scalaVersion.value) match {
+  case Some((2, 13)) => Seq("-Xsource:3", "-deprecation")
+  case _             => Seq("-deprecation")
+})
+
+val pureConfigVersion = "0.17.7"
+
+libraryDependencies += (CrossVersion.partialVersion(scalaVersion.value) match {
+  case Some((2, 13)) => "com.github.pureconfig" %% "pureconfig"      % pureConfigVersion % Provided
+  case _             => "com.github.pureconfig" %% "pureconfig-core" % pureConfigVersion % Provided
+})
 
 libraryDependencies ++= Seq(
-  "com.github.pureconfig" %% "pureconfig"        % "0.17.7" % Provided,
-  "commons-validator"      % "commons-validator" % "1.9.0",
-  "org.scalameta"         %% "munit"             % "1.0.2"  % Test
+  "commons-validator" % "commons-validator" % "1.9.0",
+  "org.scalameta"    %% "munit"             % "1.0.2" % Test
 )
