@@ -46,5 +46,5 @@ libraryDependencies += (CrossVersion.partialVersion(scalaVersion.value) match {
 
 libraryDependencies ++= Seq(
   "commons-validator" % "commons-validator" % "1.9.0",
-  "org.scalameta"    %% "munit"             % "1.0.4" % Test
+  "org.scalameta"    %% "munit"             % "1.1.0" % Test
 )
