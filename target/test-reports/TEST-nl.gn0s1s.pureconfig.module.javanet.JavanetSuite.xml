@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="runnervmf4ws1" name="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" tests="17" errors="0" failures="0" skipped="0" time="0.162" timestamp="2025-09-23T13:16:39">
+          <properties>
+      <property name="java.specification.version" value="17"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="java.vendor.url" value="https://adoptium.net/"/><property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/><property name="sun.java.command" value="/home/runner/work/pureconfig-javanet/pureconfig-javanet/sbt/bin/sbt-launch.jar clean compile test"/><property name="jdk.debug" value="release"/><property name="sun.stderr.encoding" value="UTF-8"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2025-07-15"/><property name="java.home" value="/usr/lib/jvm/temurin-17-jdk-amd64"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="32-bit"/><property name="line.separator" value="
+"/><property name="sun.stdout.encoding" value="UTF-8"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="17.0.16+8"/><property name="user.name" value="runner"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/home/runner/.cache/JNA/temp/jna10667986465356271764.tmp"/><property name="java.vendor.version" value="Temurin-17.0.16+8"/><property name="jna.loaded" value="true"/><property name="java.io.tmpdir" value="/tmp"/><property name="java.version" value="17.0.16"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="native.encoding" value="UTF-8"/><property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/><property name="java.vendor" value="Eclipse Adoptium"/><property name="java.specification.maintenance.version" value="1"/><property name="scala.ext.dirs" value="/home/runner/.sbt/1.0/java9-rt-ext-eclipse_adoptium_17_0_16"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="java.class.path" value="/home/runner/work/pureconfig-javanet/pureconfig-javanet/sbt/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Eclipse Adoptium"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="Etc/UTC"/><property name="java.vm.specification.version" value="17"/><property name="os.name" value="Linux"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/home/runner"/><property name="user.language" value="en"/><property name="sbt.script" value="/home/runner/work/pureconfig-javanet/pureconfig-javanet/sbt/bin/sbt"/><property name="sbt.ipcsocket.tmpdir" value="/run/user/1001/.sbte6558b62/ipcsocket"/><property name="swoval.tmpdir" value="/run/user/1001/.sbte6558b62/swoval"/><property name="jline.esc.timeout" value="0"/><property name="path.separator" value=":"/><property name="os.version" value="6.11.0-1018-azure"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="jna.platform.library.path" value="/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/usr/lib64:/lib64:/usr/lib:/lib:/lib32:/usr/local/lib:/usr/lib/x86_64-linux-gnu/libfakeroot"/><property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/><property name="user.dir" value="/home/runner/work/pureconfig-javanet/pureconfig-javanet"/><property name="os.arch" value="amd64"/><property name="java.vm.info" value="mixed mode, sharing"/><property name="java.vm.version" value="17.0.16+8"/><property name="java.class.version" value="61.0"/>
+    </properties>
+          <testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read a valid ipv4 address" time="0.11">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read a valid single named address" time="0.004">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read a valid ipv6 address" time="0.004">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read a valid ipv6 address in brackets" time="0.004">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="validates if a host is defined" time="0.006">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="validates if a port is defined" time="0.003">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="validates if a port is defined when a colon is present" time="0.003">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="validates if a port is a number" time="0.004">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="validates if a port is within range" time="0.003">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read back a written address" time="0.002">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read multiple addresses" time="0.004">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read multiple addresses as a list" time="0.004">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read a single address as multiple addresses" time="0.003">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="is lenient about whitespace" time="0.004">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read back a written Seq[InetSocketAddress]" time="0.001">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="can read back a written List[InetSocketAddress]" time="0.0">
+                      
+                    </testcase><testcase classname="nl.gn0s1s.pureconfig.module.javanet.JavanetSuite" name="validates the supplied setting" time="0.003">
+                      
+                    </testcase>
+          <system-out><![CDATA[]]></system-out>
+          <system-err><![CDATA[]]></system-err>
+        </testsuite>
