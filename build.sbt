@@ -13,7 +13,7 @@ developers := List(
   )
 )
 
-scalaVersion := "2.13.17"
+scalaVersion := "2.13.18"
 crossScalaVersions += "3.3.7"
 
 ThisBuild / versionScheme          := Some("semver-spec")
