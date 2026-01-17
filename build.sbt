@@ -32,17 +32,19 @@ Test / unmanagedSourceDirectories ++= {
   }
 }
 
-scalacOptions ++= (CrossVersion.partialVersion(scalaVersion.value) match {
-  case Some((2, 13)) => Seq("-Xsource:3", "-deprecation")
-  case _             => Seq("-deprecation")
-})
+scalacOptions ++=
+  (CrossVersion.partialVersion(scalaVersion.value) match {
+    case Some((2, 13)) => Seq("-Xsource:3", "-deprecation")
+    case _             => Seq("-deprecation")
+  })
 
 val pureConfigVersion = "0.17.9"
 
-libraryDependencies += (CrossVersion.partialVersion(scalaVersion.value) match {
-  case Some((2, 13)) => "com.github.pureconfig" %% "pureconfig"      % pureConfigVersion % Provided
-  case _             => "com.github.pureconfig" %% "pureconfig-core" % pureConfigVersion % Provided
-})
+libraryDependencies +=
+  (CrossVersion.partialVersion(scalaVersion.value) match {
+    case Some((2, 13)) => "com.github.pureconfig" %% "pureconfig"      % pureConfigVersion % Provided
+    case _             => "com.github.pureconfig" %% "pureconfig-core" % pureConfigVersion % Provided
+  })
 
 libraryDependencies ++= Seq(
   "commons-validator" % "commons-validator" % "1.10.1",
