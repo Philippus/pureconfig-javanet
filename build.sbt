@@ -48,5 +48,5 @@ libraryDependencies +=
 
 libraryDependencies ++= Seq(
   "commons-validator" % "commons-validator" % "1.10.1",
-  "org.scalameta"    %% "munit"             % "1.3.0" % Test
+  "org.scalameta"    %% "munit"             % "1.3.1" % Test
 )
