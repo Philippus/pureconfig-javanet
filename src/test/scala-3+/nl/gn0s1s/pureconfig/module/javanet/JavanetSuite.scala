@@ -6,7 +6,6 @@ import com.typesafe.config.ConfigFactory.parseString
 import com.typesafe.config.ConfigOriginFactory
 import pureconfig.*
 import pureconfig.error.{CannotConvert, ConfigReaderFailures, ConvertFailure}
-import pureconfig.generic.derivation.default.*
 import pureconfig.syntax.*
 
 class JavanetSuite extends munit.FunSuite {
