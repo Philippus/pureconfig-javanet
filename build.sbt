@@ -38,7 +38,7 @@ scalacOptions ++=
     case _             => Seq("-deprecation")
   })
 
-val pureConfigVersion = "0.17.10"
+val pureConfigVersion = "0.17.11"
 
 libraryDependencies +=
   (CrossVersion.partialVersion(scalaVersion.value) match {
